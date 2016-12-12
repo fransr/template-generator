@@ -2,7 +2,7 @@
 
 A simple variable based template using handlebarjs+strapdownjs. The idea is to use variables in markdown based files to easily replace the variables with content. Data is saved temporarily in local storage. PHP is only needed to generate the list of files in the dropdown of templates.
 
-<img src="https://github.com/fransr/template-generator/raw/examples/example-report.png" width="500" />
+<img src="https://github.com/fransr/template-generator/raw/examples/tpl-generator.gif" width="500" />
 
 Thoughts:
 
