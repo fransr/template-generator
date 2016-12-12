@@ -1,4 +1,4 @@
-<?
+<?php
 	header("Content-type: text/json");
 	$id = @$_GET['id'];
 	$data = false;
