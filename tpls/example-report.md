@@ -51,8 +51,8 @@ The problem with missing out on #4 above is how DNS CNAMEs works. If you have a 
 
 Since postmaster can be used to issue certificates for these domains, and since no one but you should have access to the whitelisted SSL-issuing aliases (ref: [wiki.mozilla.org](https://wiki.mozilla.org/CA:Problematic_Practices#Email_Address_Prefixes_for_DV_Certs)) I recommend that you:
 
-1. Add the both domains `{{domain}}` to your X account. *I have removed it again so you can take it back, remember that anyone can right now claim it themselves.*. 
+1. Add the both domains `{{domain}}` to your X account. **I have removed it again so you can take it back, remember that anyone can right now claim it themselves.**
 2. Keep in mind that all domains pointing to X (MX/CNAME) needs to be claimed by you, even the sub sub domains of the ones already in X. So make sure that no other domains pointing to X are missing inside your X account.
 
-Regards,
+Regards,<br />
 Frans
