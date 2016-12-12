@@ -5,13 +5,14 @@ A simple variable based template using handlebarjs+strapdownjs. The idea is to u
 <img src="https://github.com/fransr/template-generator/raw/examples/example-report.png" width="500" />
 
 Thoughts:
+
 1. I turned off HTML sanitization to make code with <, >, " etc inside:
 
-```
-this kind of content
-```
+  ```
+  this kind of content
+  ```
 
-So it's easily XSS:able as it is now.
+  So it's easily XSS:able as it is now.
 
 2. I had to hack a bit in strapdown.js due to messy location of files.
 3. I had to hack a bit in handlebar.js since I wanted to use `{{lookup}}` as a param, and that wasn't possible to turn off even though I removed it as a helper.
