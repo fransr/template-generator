@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<meta charset="utf8" />
+<html style="display:none;">
+<script src="scripts/jquery-3.1.1.min.js"></script>
+<title>Template Generator</title>
+</head>
+<body>
+<div id="main-content" class="container">
+	<xmp id="raw" theme="" style="display:none;"></xmp>
+	<textarea readonly onclick="this.select()" id="raw-copy"></textarea>
+</div>
+<div id="editor">
+<select id="list">
+	<option value="">Select</option>
+</select>
+<table id="params"><tbody></tbody></table>
+</div>
+</body>
+<script src="scripts/main.js"></script>
+<script src="scripts/strapdown.mod.js"></script>
+<script src="scripts/handlebars-v4.0.5.mod.js"></script>
+</html>
