@@ -21,17 +21,26 @@ function auto_grow(element) {
     element.style.height = "5px";
     element.style.height = (element.scrollHeight)+"px";
 }
+function clearparams() {
+	$('#params tbody textarea').val('')
+}
 function parseparams() {
 	params = [];
 	var reg = /\{\{(.+?)\}\}/g;
 	match = reg.exec(raw)
+	found = false
 	while (match != null) {
 	  params[match[1]] = true;
 	  match = reg.exec(raw);
+      found++;
 	}
 	$('#params tbody').html('')
 	if(run_init) {
 		old = localStorage.fields ? JSON.parse(localStorage.fields) : {}
+	}
+	if(found) {
+		$('#params tbody').append(tr = $("<tr></tr>"))
+		tr.append($('<td colspan="2"></td>').append($('<button>Clear</button>').on('click', clearparams)))
 	}
 	for(key in params) {
 		$('#params tbody').append(tr = $("<tr></tr>"))

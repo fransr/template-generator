@@ -1,6 +1,7 @@
 #editor th { font-size: 0.7em; }
 #raw-copy { display: none; width: 98%; margin-top: 50px; }
 #editor { width: 320px; margin-left: 5px; padding-top: 5px; position: absolute; left: 0; top: 0; }
+#params button { float: right }
 
 /*******************************************************************
 
