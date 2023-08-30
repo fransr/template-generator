@@ -9,7 +9,20 @@ This chunk is to fix Bootstrap so that the Markdown output looks good
 
 *******************************************************************/
 
-html { display: inline !important; }
+html { display: inline !important; 
+
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+    .container {
+      margin-left: 20px;
+    }
+  }
+  
+}
+
+
 
 body {
   padding-top: 10px;
